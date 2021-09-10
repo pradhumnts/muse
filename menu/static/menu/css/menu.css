@@ -1,0 +1,213 @@
+:root{
+  --primary-color: #2e608a;
+  --text-color: #fff;
+}
+@font-face {
+    font-family: Oxygen-Regular;
+    src: url('../fonts/Oxygen/Oxygen-Regular.ttf');
+  }
+
+html, body {
+    position: relative;
+    height: 100%;
+    }
+body {
+    background: #fff;
+    font-family: Oxygen-Regular;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+.logo img{
+    width: 12rem;
+}
+.restaurant-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top:40px;
+    padding: 0px 80px;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 768px){
+    .restaurant-menu{
+        padding: 0px 40px;
+    }
+}
+.item-title{
+    font-size:22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.item-price{
+    font-weight: 600; 
+}
+.hr-theme{
+  border: 1px solid #f57701;
+}
+
+.swiper-container {
+width: 100vw;
+
+overflow: hidden;
+position:relative;
+background: #fff;
+}
+
+.swiper-slide {
+text-align: left;
+font-size: 16px;
+width: 100% !important;
+background: #fff;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+
+}
+.swiper-pagination {
+justify-content: space-between;
+top: 0;
+background-color: var(--primary-color);
+display: inline-flex;
+color:white;
+overflow: scroll;
+width: 100%;
+}
+.swiper-pagination::-webkit-scrollbar {
+    display: none;
+}
+.menu-item{
+  width: 100%;
+}
+.swiper-pagination-bullet {
+white-space: nowrap;
+padding: 5px 10px;
+border-radius: 0;
+width: auto;
+height: 30px;
+text-align: center;
+text-transform: uppercase;
+line-height: 30px;
+font-size: 14px;
+letter-spacing: 1.2px;
+font-weight: 600;
+color:var(--text-color);
+opacity: 1;
+background: var(--primary-color);
+
+}
+.swiper-pagination-bullet-active {
+color:var(--text-color);
+border-bottom:#f57701 solid 3px;
+}
+.footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    flex-wrap:wrap;
+    row-gap: 7px;
+    color:var(--text-color);
+}
+
+.footer-link a{
+    font-family: Oxygen-Regular;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left:7px;
+}
+.footer-link{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    vertical-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-100px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-100px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #3F3939;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #3F3939;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: var(--primary-color);
+    color: #3F3939;
+    font-size:20px;
+    font-weight: 600;
+  }
+  
+  .modal-body img{
+      padding:10px;
+  }
+  .modal-body{
+    width:100%;
+    height:100%;
+      overflow:scroll;
+      
+  }
+  
