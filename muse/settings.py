@@ -25,7 +25,7 @@ SECRET_KEY = '(x5@oja)csyr+o026c!8af16%w5@46u3)+6v3-8)-!2)^(u5dg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['museodelron.do', 'www.museodelron.do', '127.0.0.1']
+ALLOWED_HOSTS = ['museodelron.do', 'www.museodelron.do']
 
 
 # Application definition
