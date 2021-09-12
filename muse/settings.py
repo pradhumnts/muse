@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(x5@oja)csyr+o026c!8af16%w5@46u3)+6v3-8)-!2)^(u5dg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['museodelron.do', 'www.museodelron.do']
+ALLOWED_HOSTS = ['museodelron.do', 'www.museodelron.do', '127.0.0.1']
 
 
 # Application definition
@@ -120,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/u4sgzlaz0pwz/static'
