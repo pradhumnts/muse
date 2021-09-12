@@ -78,6 +78,17 @@
   
   </div>
     <script>
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+
+        let getPrice = document.querySelectorAll("#price")
+
+        getPrice.forEach(price => {
+            price.innerHTML = numberWithCommas(price.innerHTML)
+        });
+
         let checkItems = document.querySelectorAll(".restaurant-menu")
         
         checkItems.forEach(function(item){
