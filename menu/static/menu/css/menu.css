@@ -33,7 +33,6 @@ header{
 .restaurant-menu{
     display: flex;
     flex-direction: column;
-    margin-top:40px;
     padding: 0px 80px;
     align-items: flex-start;
 }
@@ -77,8 +76,8 @@ flex-direction: column;
 
 }
 .swiper-pagination {
+position: relative !important;
 justify-content: space-between;
-top: 0;
 background-color: var(--primary-color);
 display: inline-flex;
 color:white;
